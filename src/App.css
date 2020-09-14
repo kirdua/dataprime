@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: black;
+  color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* HEADER */
+.breadcrumb {
+  color: #444444;
+}
+
+.header {
+  border-bottom: 1px solid #444444;
+  margin-bottom: 15px;
+}
+
+.header > p {
+  margin-bottom: 5px;
+}
+
+.header > button {
+  margin-left: -15px;
+}
+
+.header > h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*UserName*/
+.user {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-name {
   align-items: center;
+  background: #444444;
+  border-radius: 5px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  width: 300px;
+}
+
+.person-icon {
+  color: #747474;
+  margin-right: 10px;
+}
+
+/*TECHSKILLS*/
+.tech-skills-container {
+  margin-top: 25px;
+  background: #0A0708;
+}
+
+.tech-skills > h2 {
+  color: #747474;
+}
+
+.skills-container {
+}
+
+.skills-title {
+  display: inline-block;
+}
+
+.table-grey {
+  background: #747474;
+}
+
+.table-color {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
